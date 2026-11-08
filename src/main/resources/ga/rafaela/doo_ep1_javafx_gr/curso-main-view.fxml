@@ -12,13 +12,13 @@
               <columns>
                 <TableColumn fx:id="colTipo" prefWidth="91.99999749660492" text="Tipo" />
                 <TableColumn fx:id="colCodigo" prefWidth="102.00000762939453" text="Código" />
-                  <TableColumn fx:id="colDuracion" prefWidth="102.33332824707031" text="Duración (hrs)" />
-                  <TableColumn fx:id="colCosto" prefWidth="83.66668701171875" text="Costo" />
+                  <TableColumn fx:id="colDuracion" prefWidth="87.66665649414062" text="Duración (hrs)" />
+                  <TableColumn fx:id="colCosto" prefWidth="96.0" text="Costo ($)" />
               </columns>
             </TableView>
             <HBox alignment="CENTER_LEFT" prefHeight="163.0" prefWidth="380.0">
                <children>
-                  <Label fx:id="lblMensaje" alignment="CENTER" contentDisplay="CENTER" prefHeight="83.0" prefWidth="322.0" text="Label" />
+                  <Label fx:id="lblMensaje" alignment="CENTER" contentDisplay="CENTER" prefHeight="83.0" prefWidth="322.0" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onEliminar" prefHeight="25.0" prefWidth="116.0" text="Eliminar" textAlignment="CENTER" />
                </children>
             </HBox>
@@ -26,8 +26,26 @@
       </VBox>
       <VBox alignment="CENTER" prefHeight="466.0" prefWidth="285.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="171.0" text="Elige una acción:" textAlignment="CENTER" />
-            <Label alignment="CENTER" prefHeight="25.0" prefWidth="283.0" text="Registrar - Consultar Evaluación - Emitir Diploma - Buscar por Código">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="166.0" text="Elige una acción:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="138.0" text="| Registrar Curso |" wrapText="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="149.0" text="| Consultar Estado de Evaluación |" wrapText="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="77.0" layoutY="60.0" prefHeight="24.0" prefWidth="149.0" text="| Emitir Diploma |" wrapText="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="77.0" layoutY="54.0" prefHeight="24.0" prefWidth="149.0" text="| Buscar Curso por Código |" wrapText="true">
                <font>
                   <Font size="9.0" />
                </font>

@@ -41,4 +41,9 @@ public class CursoLibre extends Curso{
         return detalle;
     }
 
+    @Override
+    public String getTipo(){
+        return "Libre";
+    }
+
 }

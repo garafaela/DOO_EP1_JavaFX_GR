@@ -52,6 +52,7 @@ public abstract class Curso {
 
     // MÉTODOS ABSTRACTOS
     public abstract double calcularCosto();
+    public abstract String getTipo();
 
     // MÉTODOS ADICIONALES
     @Override

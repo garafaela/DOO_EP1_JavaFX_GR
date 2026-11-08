@@ -72,6 +72,11 @@ public class CursoCertificado extends Curso implements ConDiploma {
         return detalle;
     }
 
+    @Override
+    public String getTipo(){
+        return "Certificado";
+    }
+
     // MÉTODOS INTERFAZ
     // CORRECCIÓN: usé los getter y setter privados, para que sólo se pueda acceder a ellos a través de los métodos de interfaz.
     @Override
